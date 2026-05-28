@@ -14,13 +14,13 @@ jobs:
       - name: First step
         run: echo "Second job"
 
-  failed-job:
+  suceed-job:
     runs-on: ubuntu-latest
     steps:
       - name: First step
         run: |
-          echo "I will fail"
-          exit 1
+          echo "I will suceed"
+          exit 0
 
       - name: Say Goodbye
         run: echo "Goodbye!"
